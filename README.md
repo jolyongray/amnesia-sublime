@@ -8,6 +8,8 @@ from the editor, and copies a share link to your clipboard.
 Amnesia.io is an ephemeral code sharing service with nice collaboration and privacy
 features. Read more about it at https://amnesia.io.
 
+Also available for [Atom](https://github.com/nathamanath/amnesia-atom)
+
 ## Usage
 
 ### Installation
