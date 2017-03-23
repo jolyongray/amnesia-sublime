@@ -59,7 +59,7 @@ class Amnesia(sublime_plugin.WindowCommand):
       emptySelections = map(lambda sel: sel.a == sel.b, selections)
       if all(emptySelections):
         sublime.status_message('Selection empty')
-        return false
+        return False
 
       trimmedSelections = filter(lambda sel: sel.a != sel.b, selections)
       return map(lambda s: view.substr(s), trimmedSelections)
