@@ -1,0 +1,6 @@
+[
+  { "keys": ["ctrl+alt+shift+a"], "command": "amnesia" },
+  { "keys": ["ctrl+alt+shift+s"], "command": "amnesia", "args": { "share": "selection" } },
+  { "keys": ["ctrl+alt+shift+f"], "command": "amnesia", "args": { "share": "file" } },
+  { "keys": ["ctrl+alt+shift+l"], "command": "amnesia", "args": { "share": "line" } }
+]

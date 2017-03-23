@@ -1,0 +1,17 @@
+[
+     {
+           "caption": "Amnesia.io: Share", "command": "amnesia"
+     },
+     {
+           "caption": "Amnesia.io: Share File", "command": "amnesia",
+           "args": { "share": "file" }
+     },
+     {
+           "caption": "Amnesia.io: Share Selection", "command": "amnesia",
+           "args": { "share": "selection" }
+     },
+     {
+           "caption": "Amnesia.io: Share Line", "command": "amnesia",
+           "args": { "share": "line" }
+     }
+]
