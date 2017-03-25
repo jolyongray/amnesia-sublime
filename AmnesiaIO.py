@@ -14,7 +14,7 @@ class Amnesia(sublime_plugin.WindowCommand):
       headers = {'Content-Type': 'application/json'}
       payload = str.encode(json.dumps({
         'content': content,
-        'extension': settings.get('ttl'),
+        'extension': getExtension(),
         'ttl': settings.get('ttl')
       }))
       req = Request(API_URL, data = payload, headers = headers)
@@ -30,6 +30,21 @@ class Amnesia(sublime_plugin.WindowCommand):
 
       sublime.set_clipboard(str(responseJSON['url']))
       sublime.status_message(MSG_SUCCESS)
+
+    def getExtension():
+      view = self.window.active_view()
+      file_name = view.file_name()
+
+      if file_name == None:
+        extension = settings.get('defaultFormat')
+      else:
+        file_name_list = file_name.split('.')
+        if len(file_name_list) < 2:
+          extension = settings.get('defaultFormat')
+        else:
+          extension = file_name_list[-1]
+
+      return extension
 
     def getRelevant():
       view = self.window.active_view()
