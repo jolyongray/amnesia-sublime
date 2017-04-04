@@ -71,12 +71,11 @@ class Amnesia(sublime_plugin.WindowCommand):
       view = self.window.active_view()
       selections = view.sel()
 
-      emptySelections = map(lambda sel: sel.a == sel.b, selections)
-      if all(emptySelections):
+      trimmedSelections = [sel for sel in selections if not sel.empty()]
+      if not trimmedSelections:
         sublime.status_message('Selection empty')
         return False
 
-      trimmedSelections = filter(lambda sel: sel.a != sel.b, selections)
       return map(lambda s: view.substr(s), trimmedSelections)
 
     def dispatch():
