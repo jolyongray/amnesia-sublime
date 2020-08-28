@@ -14,8 +14,8 @@ Also available for [Atom](https://github.com/nathamanath/amnesia-atom)
 
 ### Installation
 
-* Copy into a folder in your Packages directory (under `Preferences -> Browse Packages...`)
-* Not currently in Package Control
+* Get from [Package Control](https://packagecontrol.io/packages/AmnesiaIO)
+* Or copy into a folder in your Packages directory (under `Preferences -> Browse Packages...`)
 
 ### Functionality
 
