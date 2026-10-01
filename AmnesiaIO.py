@@ -1,6 +1,7 @@
 import sublime
 import sublime_plugin
 import json
+from urllib.error import URLError
 from urllib.request import Request, urlopen
 
 API_URL = 'https://amnesia.io/api';
