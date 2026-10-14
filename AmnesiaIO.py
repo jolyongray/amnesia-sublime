@@ -2,6 +2,7 @@ import sublime
 import sublime_plugin
 import json
 from urllib.request import Request, urlopen
+from urllib.error import URLError
 
 API_URL = 'https://amnesia.io/api';
 MSG_SUCCESS = 'Amnesia.io share link copied to clipboard';
